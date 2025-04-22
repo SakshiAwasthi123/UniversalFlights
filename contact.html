@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contact-form {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .contact-form h5 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .btn-continue {
+            background-color: #ff6600;
+            color: #fff;
+            width: 100%;
+            border: none;
+        }
+        .btn-continue:hover {
+            background-color: #e65c00;
+        }
+        .form-check label {
+            
+            font-weight: bold;
+        }
+        .form-control{box-shadow: none !important;}
+        .error{color: red}
+        .form-control.error{
+            border-color: red;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<div class="contact-form">
+    <h5>01 Contact Information</h5>
+    <p class="text-muted">(Your ticket and flight info will be sent here)</p>
+    
+    <form id="ctForm" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="email" placeholder="Email *" required>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="col-4">
+                <select class="form-select" aria-label="Country Code">
+                    <option selected>IN (+91)</option>
+                    <option value="1">US (+1)</option>
+                    <option value="44">UK (+44)</option>
+                </select>
+            </div>
+            <div class="col-8">
+                <input type="tel" class="form-control" placeholder="Phone *" required>
+            </div>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="whatsappUpdates">
+            <label class="form-check-label" for="whatsappUpdates">
+                Yes, I would like to receive updates via <span class="text-success"><i class="bi bi-whatsapp"></i>WhatsApp</span>
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-continue">CONTINUE</button>
+    </form>
+    <script>$("#ctForm").validate();</script>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
