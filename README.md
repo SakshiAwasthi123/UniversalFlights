@@ -44,3 +44,9 @@ User-friendly layout and input fields
 Flight selection with all key details
 Easy-to-use forms with logical grouping
 
+## Screen Recording
+
+
+https://github.com/user-attachments/assets/412ea33e-c3d5-4de4-9e2d-0bad2d57c47e
+
+
